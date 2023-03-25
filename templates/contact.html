@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact | My Flask App</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">My Flask App</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="{{ url_for('home') }}">Home</a></li>
+				<li><a href="{{ url_for('about') }}">About</a></li>
+				<li class="active"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h1>Contact</h1>
+		<p>Get in touch with us:</p>
+		<ul>
+			<li>First Name: {{ first_name }}</li>
+			<li>Last Name: {{ last_name }}</li>
+
+
+
+
+Regenerate response

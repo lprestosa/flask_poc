@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Flask App</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">My Flask App</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="{{ url_for('about') }}">About</a></li>
+				<li><a href="{{ url_for('contact') }}">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="sidebar-nav">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="{{ url_for('songs') }}">Songs</a></li>
+						<li><a href="{{ url_for('albums') }}">Albums</a></li>
+						<li><a href="{{ url_for('artists') }}">Artists</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="jumbotron">
+					<h1>Welcome to my Flask App!</h1>
+					<p>This is a basic example of a Flask web application using Bootstrap for styling.</p>
+					<a class="btn btn-primary" href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Include jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
